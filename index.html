@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatibel" content="IE=edge">
+  <title>HOLLYS | HOME</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+	$(document).ready(function(){
+      var mySlider = $('.visual-slider').bxSlider({
+			mode: 'fade',
+			captions: true,
+		
+		});
+			$("#prevBtn").on("click", function(){
+				mySlider.goToPrevSlide();
+			});
+			$("#nextBtn").on("click", function(){
+				mySlider.goToNextSlide();
+			});
+			
+			$("#prevBtn>img").hover(function(){
+				$("#prevBtn>img").attr("src","./images/main/main_visual_button_prev2.png")
+			},function(){
+				$("#prevBtn>img").attr("src","./images/main/main_visual_button_prev.png")
+			});
+			$("#nextBtn>img").hover(function(){
+				$("#nextBtn>img").attr("src","./images/main/main_visual_button_next2.png")
+			},function(){
+				$("#nextBtn>img").attr("src","./images/main/main_visual_button_next.png")
+			});
+
+			var mySlider2 = $('.online-inner-wrap').bxSlider({
+				auto:false,
+				controls:true,
+				
+			});
+
+			$("#prevBtn2").on("click", function(){
+				mySlider2.goToPrevSlide();
+			});
+			$("#nextBtn2").on("click", function(){
+				mySlider2.goToNextSlide();
+			});
+			
+			$("#prevBtn2>img").hover(function(){
+				$("#prevBtn2>img").attr("src","./images/main/main_visual_button_prev2.png")
+			},function(){
+				$("#prevBtn2>img").attr("src","./images/main/main_visual_button_prev.png")
+			});
+			$("#nextBtn2>img").hover(function(){
+				$("#nextBtn2>img").attr("src","./images/main/main_visual_button_next2.png")
+			},function(){
+				$("#nextBtn2>img").attr("src","./images/main/main_visual_button_next.png")
+			});
+			
+			$('#notice-area > ul').bxSlider({
+				mode:'vertical',
+				auto:true,
+				controls:true,
+				autoControls:true,
+				autoControlsCombine:true
+			});
+	});
+
+  </script>
+ </head>
+ <body>
+ 	<!-- header -->
+	<div id="header-outer-wrap">
+		<p class="skipmenu"><a href="container.html">본문바로가기</a></p>
+		<header id="header">
+			<h1><a href="index.html"><img src="images/common/header_gnb_logo.png" alt="할리스 메인 로고"></a></h1>
+			<div class="util-menu">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li>
+						<select name="language" id="language" title="언어선택">
+							<option value="Korean">Korean</option>
+							<option value="English">English</option>
+							<option value="Chinese">Chinese</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<nav class="gnb-menu">
+				<h2 class="blind">메인메뉴</h2>
+				<ul>
+					<li class="m1"><a href="#">MENU</a>
+						<ul>
+							<li><a href="#">할리스 신메뉴</a></li>
+							<li><a href="#">할리스 메뉴</a></li>
+							<li><a href="#">할리스 베이커리</a></li>
+							<li><a href="#">할리스 MD</a></li>
+						</ul>
+					</li>
+					<li class="m2"><a href="#">HOLLYS MALL</a>
+						<ul>
+							<li><a href="#">할리스콘</a></li>
+						</ul>
+					</li>
+					<li class="m3"><a href="#">STORE</a>
+						<ul>
+							<li><a href="#">국내</a></li>
+							<li><a href="#">해외</a></li>
+						</ul>
+					</li>
+					<li class="m4"><a href="#">NOTICE</a>
+						<ul>
+							<li><a href="#">할리스 소식</a></li>
+							<li><a href="#">이벤트</a></li>
+						</ul>
+					</li>
+					<li class="m5"><a href="#">SERVICE</a>
+						<ul>
+							<li><a href="#">할리스 멤버스</a></li>
+							<li><a href="#">제휴할인</a></li>
+							<li><a href="#">기프트카드</a></li>
+							<li><a href="#">아카데미</a></li>
+							<li><a href="#">B2B 사업 소개</a></li>
+						</ul>
+					</li>
+					<li class="m6"><a href="#">HOLLYS IS</a>
+						<ul>
+							<li><a href="#">브랜드 소개</a></li>
+							<li><a href="#">회사 소개</a></li>
+							<li><a href="#">CSR</a></li>
+							<li><a href="#">채용 안내</a></li>
+							<li><a href="#">가맹 개설 안내</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- <div id="gnb-sub-bar">
+			<img src="images/common/header-gnb-sub-bar.png" alt="서브바">
+		</div> -->
+	</div>
+	<!-- //header -->
+	<!-- main-visual -->
+	<div id="visual-wrap">
+		<div class="main-visual">
+			<ul class="visual-slider">
+				<li class="v1"><img src="images/main/main_visual_image_1.png" alt="coffee with winter">
+					<p>COFFEE <span class="txt1">WITH</span> <span class="txt2">WINTER</span></p>
+				</li>
+				<li class="v2"><img src="images/main/main_visual_image_2.png" alt="sweet holiday">
+					<p>SWEET</p>
+					<p>HOLIDAY</p>
+				</li>
+				<li class="v3"><img src="images/main/main_visual_image_3.png" alt="sweet morning">
+					<p>SWEET</p> <p>MORNING</p>
+				</li>
+			</ul>
+			<div id="prevBtn">
+				<img src="images/main/main_visual_button_prev.png" alt="이전버튼">
+			</div>
+			<div id="nextBtn">
+				<img src="images/main/main_visual_button_next.png" alt="다음버튼">
+			</div>
+		</div>
+	</div>
+	<!-- //main-visual -->
+	<!-- container -->
+	<div id="container">
+		<!-- online-mall -->
+		<div id="online-mall">
+			<h3><img src="images/main/main_mall_logo.png" alt="할리스몰"></h3>
+			<p>할리스커피의 다양한 상품들 온라인에서도 만나보세요.</p>
+			<div class="online-inner-wrap">
+				<div class="mall-1">
+					<ul class="item-1">
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_1.png" alt="카페아메리카노"></a>
+							<p>카페아메리카노</p>
+							<p><span>4,100</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_2.png" alt="바닐라 딜라이트"></a>
+							<p>바닐라 딜라이트</p>
+							<p><span>5,100</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_3.png" alt="티라미스 크림라떼"></a>
+							<p>티라미스 크림라떼</p>
+							<p><span>5,900</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_4.png" alt="딸기스무디"></a>
+							<p>딸기스무디</p>
+							<p><span>5,700</span>원</p>
+						</li>
+					</ul>
+				</div>
+				<div class="mall-2">
+					<ul class="item-2">
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_5.png" alt="딸기치즈케익 할리치노"></a>
+							<p>딸기치즈케익 할리치노</p>
+							<p><span>5,900</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_6.png" alt="고구마라떼"></a>
+							<p>고구마라떼</p>
+							<p><span>5,500</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_7.png" alt="카페모카"></a>
+							<p>카페모카</p>
+							<p><span>5,100</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_8.png" alt="그린티라떼"></a>
+							<p>그린티라떼</p>
+							<p><span>5,800</span>원</p>
+						</li>
+					</ul>
+				</div>
+				<div class="mall-3">
+					<ul class="item-3">
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_9.png" alt="카페라떼"></a>
+							<p>카페라떼</p>
+							<p><span>4,600</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_10.png" alt="망고오렌지 스무디"></a>
+							<p>망고오렌지 스무디</p>
+							<p><span>5,700</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_11.png" alt="핫초코"></a>
+							<p>핫초코</p>
+							<p><span>4,900</span>원</p>
+						</li>
+						<li>
+							<a href="#"><img src="images/main/main_mall_item_12.png" alt="복숭아 아이스티"></a>
+							<p>복숭아 아이스티</p>
+							<p><span>4,800</span>원</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="prevBtn2">
+					<img src="images/main/main_visual_button_prev.png" alt="이전버튼">
+				</div>
+				<div id="nextBtn2">
+					<img src="images/main/main_visual_button_next.png" alt="다음버튼">
+				</div>
+		</div>
+		<!-- //online-mall -->
+		<!-- event -->
+		<div id="event">
+			<p><a href="#"><img src="images/main/main_event_banner.png" alt="이벤트"></a></p>
+			<a href="#">자세히보기</a>
+		</div>
+		<!-- //event -->
+		<!-- notice -->
+		<div id="notice-area">
+			<h3>할리스 소식</h3>
+			<ul>
+				<li><a href="#">'내 맘대로 커피' 하세요!</a></li>
+				<li><a href="#">SKTelecom 11월 T Day 프로모션 &lt;할리스커피 1+1&gt;</a></li>
+				<li><a href="#">2019 할리스 플래너 세트 사전 공지</a></li>
+			</ul>
+			<button><a href="#">더보기</a></button>
+		</div>
+		<!-- //notice -->
+		<!-- banner -->
+		<div id="main_article">
+			<ul>
+				<li>
+					<div class="card-1">
+						<h3 class="card-title">창업안내</h3>
+						<p class="card-text">할리스 커피 창업에 대한<br>궁금증을 해결해 드립니다.</p>
+					</div>
+				</li>
+				<li>
+					<div class="card-2">
+						<h3 class="card-title">아카데미</h3>
+						<p class="card-text">할리스 커피 아카데미와<br>즐거운 커피 여행을 떠나보세요!</p>
+					</div>
+				</li>
+				<li>
+					<div class="card-3">
+						<h3 class="card-title">할리스 B2B 솔루션</h3>
+						<p class="card-text">할리스 F&B는 20년의 커피 노하우를<br>기반으로 한 할리스 B2B 솔루션을 소개합니다.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<div id="footer-outer-wrap">
+		<div class="footer">
+			<h2><a href="index.html"><img src="images/common/footer_logo.png" alt="할리스 로고"></a></h2>
+			<ul class="f-1">
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">서비스이용약관</a></li>
+				<li><a href="#">멤버십이용약관</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">BI소개</a></li>
+			</ul>
+			<ul class="f-2">
+				<li>법인명: (주) 할리스에프앤비</li>
+				<li>대표자: 김유진</li>
+				<li>사업자등록번호 211-87-61044</li>
+				<li>통신판매업: 제2012-서울강남-01081호</li>
+				<li>주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동)</li>
+				<li>대표전화 : 02-2188-7100 (가맹문의 : 1670-4432)</li>
+			</ul>
+			<p><small>COPYRIGHT &copy; HOLLYS COFFEECo., Ltd. All Rights Reserved.</small></p>
+			<ul class="sns">
+				<li><a href="https://www.facebook.com/EnjoyHollys"><img src="images/common/footer_sns_1.png" alt="할리스 페이스북"></a></li>
+				<li><a href="https://www.instagram.com/hollyscoffeekr/"><img src="images/common/footer_sns_2.png" alt="할리스 인스타그램"></a></li>
+				<li><a href="http://hollyscoffeeblog.com/"><img src="images/common/footer_sns_3.png" alt="할리스 네이버 블로그"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //footer -->
+ </body>
+</html>
