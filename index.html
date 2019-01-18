@@ -68,6 +68,14 @@
 				autoControls:true,
 				autoControlsCombine:true
 			});
+
+			$(".gnb-menu").hover(function(){
+			$(".sub-menu").stop().slideDown();
+			$("#gnb-menu-open").stop().slideDown();
+			},function(){
+			$(".sub-menu").stop().slideUp();
+			$("#gnb-menu-open").stop().slideUp();
+			});
 	});
 
   </script>
@@ -94,9 +102,9 @@
 			</div>
 			<nav class="gnb-menu">
 				<h2 class="blind">메인메뉴</h2>
-				<ul >
+				<ul>
 					<li class="m1"><a href="#">MENU</a>
-						<ul style="display: none;">
+						<ul class="sub-menu">
 							<li><a href="#">할리스 신메뉴</a></li>
 							<li><a href="#">할리스 메뉴</a></li>
 							<li><a href="#">할리스 베이커리</a></li>
@@ -104,24 +112,24 @@
 						</ul>
 					</li>
 					<li class="m2"><a href="#">HOLLYS MALL</a>
-						<ul>
+						<ul class="sub-menu">
 							<li><a href="#">할리스콘</a></li>
 						</ul>
 					</li>
 					<li class="m3"><a href="#">STORE</a>
-						<ul>
+						<ul class="sub-menu">
 							<li><a href="#">국내</a></li>
 							<li><a href="#">해외</a></li>
 						</ul>
 					</li>
 					<li class="m4"><a href="#">NOTICE</a>
-						<ul>
+						<ul class="sub-menu">
 							<li><a href="#">할리스 소식</a></li>
 							<li><a href="#">이벤트</a></li>
 						</ul>
 					</li>
 					<li class="m5"><a href="#">SERVICE</a>
-						<ul>
+						<ul class="sub-menu">
 							<li><a href="#">할리스 멤버스</a></li>
 							<li><a href="#">제휴할인</a></li>
 							<li><a href="#">기프트카드</a></li>
@@ -130,7 +138,7 @@
 						</ul>
 					</li>
 					<li class="m6"><a href="#">HOLLYS IS</a>
-						<ul>
+						<ul class="sub-menu">
 							<li><a href="#">브랜드 소개</a></li>
 							<li><a href="#">회사 소개</a></li>
 							<li><a href="#">CSR</a></li>
@@ -145,7 +153,7 @@
 	<div id="gnb-menu-open"></div>
 	<!-- //header -->
 	<!-- main-visual -->
-<!-- 	<div id="visual-wrap">
+	<div id="visual-wrap">
 		<div class="main-visual">
 			<ul class="visual-slider">
 				<li class="v1"><img src="images/main/main_visual_image_1.png" alt="coffee with winter">
@@ -323,7 +331,7 @@
 				<li><a href="http://hollyscoffeeblog.com/"><img src="images/common/footer_sns_3.png" alt="할리스 네이버 블로그"></a></li>
 			</ul>
 		</div>
-	</div> -->
+	</div>
 	<!-- //footer -->
  </body>
 </html>

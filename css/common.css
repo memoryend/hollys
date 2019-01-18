@@ -3,21 +3,27 @@ body{font: 14px Nanum Gothic,"나눔고딕",sans-serif; color: #555;}
 #header-outer-wrap{max-width: 100%; height: 118px;background-color: #f6f5ef;position: relative; z-index: 400;}
 p.skipmenu{background-color: #220f00; color:#fff; position: absolute; left: 0;top: -200px; text-align: center; width: 100%; padding: 10px 0;z-index: 1;}
 #header{width: 1200px; margin: 0 auto;}
-#header h1{float: left; padding-top: 28px;/*position: absolute; top: 28px; left: 365px;*/}
+#header h1{float: left; padding-top: 28px;}
 
 .util-menu > ul{float: right;}
 .util-menu > ul:after{content:""; display: block; clear: both;}
 .util-menu > ul > li{float: left; padding: 22px 0 0 27px;}
-.util-menu > ul > li > a{cursor:pointer; line-height: 24px;_display: block;}
+.util-menu > ul > li > a{cursor:pointer; line-height: 24px; display: block;}
 .util-menu > ul > li > #language{width: 106px; height: 24px;}
 
-.gnb-menu:after{content:"", clear: both; display: block;}
-.gnb-menu > ul{width: 100%; float: right;}
-.gnb-menu > ul:after{content:"", clear: both; display: block;}
-.gnb-menu > ul > li{float: left; width: 156px;}
-.gnb-menu > ul > li > a{font-size: 18px; font-weight: bold; color:#220f00; display: block; text-align: center;}
-.gnb-menu > ul > li > a:hover, .gnb-menu ul > li > a:focus{color: #ba000d;}
-.gnb-menu > ul ul > li{display: none;}
+nav.gnb-menu{float: right;}
+nav.gnb-menu:after{content:"", clear: both; display: block;}
+nav.gnb-menu > ul{width: 100%;}
+nav.gnb-menu > ul:after{content:"", clear: both; display: block;}
+nav.gnb-menu > ul > li{float: left; margin-left: 90px; margin-top: 30px;}
+nav.gnb-menu > ul > li:nth-child(6){margin-right: 36px;}
+nav.gnb-menu > ul > li > a{font-size: 18px; font-weight: bold; color:#220f00; display: block; text-align: center;}
+nav.gnb-menu > ul > li > a:hover, .gnb-menu ul > li > a:focus{color: #ba000d;}
+
+nav.gnb-menu ul.sub-menu{position: absolute; top: 128px; width: 100%; z-index: 1; display: none;}
+nav.gnb-menu ul.sub-menu > li a{display: block; line-height: 25px; color:#707070;}
+nav.gnb-menu ul.sub-menu > li a:hover, nav.gnb-menu ul.sub-menu > li a:focus{color: #ba000d;}
+
 /*
 .gnb-menu > ul{width: 100%; padding-top: 78px; padding-left: 236px; position: relative;}
 .gnb-menu > ul > li{float: left; position: absolute; top: 79px; left: 236px;}
@@ -42,7 +48,7 @@ p.skipmenu{background-color: #220f00; color:#fff; position: absolute; left: 0;to
 */
 
 
-#gnb-menu-open{width: 1920px; height: 168px; background: #f6f5ef; z-index: 400; border: 1px solid #ccc;}
+#gnb-menu-open{width: 1920px; height: 168px; background: #f6f5ef; z-index: 1; display: none;}
 
 
 #footer-outer-wrap{width: 100%; height: 187px; background: #220f00;}
