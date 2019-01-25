@@ -26,7 +26,10 @@ nav.gnb-menu ul.sub-menu > li a:hover, nav.gnb-menu ul.sub-menu > li a:focus{col
 
 #gnb-menu-open{width: 100%;top:118px; height:170px;background: #f6f5ef; z-index: 1; display:none;position: absolute;left:0;}
 
-
+/*
+nav.gnb-menu ul.fixed{position: fixed; top: 65px; left: 580px;width: 100%;}
+nav.gnb-menu ul.fixed li{height: 64px; line-height: 64px;}
+*/
 /*
 .gnb-menu > ul{width: 100%; padding-top: 78px; padding-left: 236px; position: relative;}
 .gnb-menu > ul > li{float: left; position: absolute; top: 79px; left: 236px;}

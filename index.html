@@ -76,6 +76,18 @@
 			$(".sub-menu").stop().slideUp();
 			$("#gnb-menu-open").stop().slideUp();
 			});
+
+			/*
+			var $menuPos = $(".gnb-menu").offset().top;
+			$(window).on("scroll", function(){
+				var scrollY = window.pageYOffset;
+				if ($menuPos > scrollY) {
+					$(".gnb-menu ul").addClass("fixed")
+				}else{
+					$(".gnb-menu ul").removeClass("fixed")
+				}
+			});
+			*/
 	});
 
   </script>
